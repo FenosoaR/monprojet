@@ -1,0 +1,33 @@
+demande devis
+-nom prenom
+-contact(phone ou email)
+-siteweb
+-sujet
+-detail
+-file(word/exel/pdf/zip)
+
+	mimetype
+	-pdf = application/pdf
+	-excel =application/vnd.ms-excel
+	-zip = application/zip
+	-word = application/vnd.openxmlformats-officedocument.wordprocess
+
+#contact
+-nom prenom
+-email
+-message
+
+#authentification
+-login
+-register
+-connected->admin
+-disconnected->login
+
+#admin(affichage)->gmail
+-demande de devis
+-message
+
+
+--creer user: symfony console make:user
+--creer auth:symfony console make:auth
+--symfony console make:registration-form

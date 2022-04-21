@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}Modification{% endblock %}
+{% block body %}
+    {{form_start(formulaire)}}
+        <div>
+            {{form_label(formulaire.titre , 'Titre : ')}}
+            {{form_widget(formulaire.titre , { 'attr': {'class': "test form control" , 'value': data.titre} }) }}
+        </div>
+        <div>
+            {{ form_label(formulaire.contenu , 'Contenu : ')}}
+            {{ form_widget(formulaire.contenu , { 'attr' : {'class' : " form control" , 'value' : data.contenu } }) }}
+        </div>
+       
+
+    {{form_end(formulaire)}}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block title %}Voir un article{% endblock %}
+{% block body %}
+    <h1>{{ data.titre }}</h1>
+    <p>{{ data.contenu }}</p>
+    <img src="{{ asset('uploads/')}}{{data.imageName}}" alt="">
+
+{% endblock %}
